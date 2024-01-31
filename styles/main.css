@@ -1,0 +1,244 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #D7DDE5;
+    font-family: "Roboto", sans-serif;
+}
+.center {
+  text-align: center;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+  background: #18283B;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 45%;
+}
+.logo img {
+  width: 3rem;
+}
+.logo p {
+  font-size: 2rem;
+  color: #FFF;
+  padding-left: 5px;
+}
+ul {
+    list-style: none;
+}
+
+ul li {
+    display:inline-flex;
+    flex-direction:row;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #8291A5;
+    padding: 8px 30px;
+    border-radius: 7px;
+    transition: all .3s ease;
+}
+
+ul li a:hover,
+ul li a.active {
+    color: #FFF;
+    background: #0075FF;
+}
+
+#icon {
+    background-color: #0075FF;
+    padding: 5px 7px 3px 7px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#icon svg {
+    color: #FFF;
+    height: 28px;
+    transition: all .3s ease;
+}
+
+#icon:hover {
+    background: #FFF;
+}
+
+#icon:hover svg {
+    color: #0075FF;
+}
+
+#checkbox,
+#icon {
+    display: none;
+}
+
+
+
+/* SOCIAL ICON BAR*/
+.sticky-icon  {
+	z-index:1;
+	position:fixed;
+	top:15%;
+	right:0%;
+	width:220px;
+	display:flex;
+	flex-direction:column;}  
+.sticky-icon a  {
+	transform:translate(160px,0px);
+	border-radius:50px 0px 0px 50px;
+	text-align:left;
+	margin:2px;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:10px;
+	font-size:22px;
+	font-family:'Oswald', sans-serif;
+	transition:all 0.8s;}
+.sticky-icon a:hover  {
+	color:#FFF;
+	transform:translate(0px,0px);}	
+.sticky-icon a:hover i  {
+	transform:rotate(360deg);}
+/*.search_icon a:hover i  {
+	transform:rotate(360deg);}*/
+
+.Instagram  {
+	background-color:#1F1D1D;
+	color:#FFF;}
+.Instagram:hover {
+    background-color:#FD1D1D;
+}
+.TikTok  {
+	background-color:#1F1D1D;
+	color:#FFF;}
+.TikTok:hover {
+    background-color:#1F1D1D;
+}    						
+.Facebook  {
+	background-color:#1F1D1D;
+	color:#FFF;}
+.Facebook:hover{
+    background-color:#2C80D3;
+}	
+.Youtube  {
+	background-color:#1F1D1D;
+	color:#FFF;}
+.Youtube:hover{
+    background-color: #fa0910;
+}
+
+.sticky-icon a i {
+	background-color:#FFF;
+	height:40px;
+	width:40px;
+	color:#000;
+	text-align:center;
+	line-height:40px;
+	border-radius:50%;
+	margin-right:20px;
+	transition:all 0.5s;}
+
+.sticky-icon a i.fa-instagram  {
+    background-color:#FFF;
+    color:#1F1D1D;
+}
+.sticky-icon a i.fa-tiktok  {
+	background-color:#FFF;
+	color:#1F1D1D;}
+.sticky-icon a i.fa-facebook-f  {
+    background-color:#FFF;
+    color:#1F1D1D;}
+.sticky-icon a i.fa-youtube  {
+    background-color:#FFF;
+    color:#1F1D1D;}        
+
+.sticky-icon:hover a i.fa-instagram  {
+	color:#FD1D1D;}
+.sticky-icon:hover a i.fa-tiktok  {
+    background-color:#FFF;
+    color:#1F1D1D;}
+.sticky-icon:hover a i.fa-facebook-f  {
+    background-color:#FFF;
+    color:#2C80D3;}
+.sticky-icon:hover a i.fa-youtube  {
+    background-color:#FFF;
+    color:#fa0910;}
+
+/* .fas fa-shopping-cart  {
+	background-color:#FFF;}	 */
+
+#myBtn {
+    height:50px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    text-align:center;
+    padding:10px;
+    text-align:center;
+    line-height:40px;
+    border: none;
+    outline: none;
+    background-color: #1e88e5;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.fa-arrow-circle-up  {
+	font-size:30px;}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .sticky-icon {
+        display: none;
+    }
+    nav {
+        border-bottom: 1px solid #455468;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 71px);
+        background-color: #18283B;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: none;
+        margin-top: 71px;
+    }
+
+    ul li {
+        display: block;
+        padding: 10px 15px;
+    }
+
+    ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    #icon {
+        display: block;
+    }
+
+    #checkbox:checked~ul {
+        display: block;
+    }
+}
