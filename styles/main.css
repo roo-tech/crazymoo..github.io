@@ -267,10 +267,10 @@ nav ul li a:hover, nav ul li a.active {
   padding: 5px 0;
 }
 .back a:hover {
-  background: var(--color-tabasco);
+  /* background: var(--color-tabasco);
   color: var(--color-white);
   text-shadow: 0 0 1px #333;
-  padding: 5px 0;
+  padding: 5px 0; */
   }
 .cardBox:nth-child(1) .card .back {
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(137,134,152,1) 96%, rgba(63,62,71,0.01) 100%);
