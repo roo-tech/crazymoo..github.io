@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <nav>
+    <nav id="top">
       <div class="logo">
         <img src="./images/robothead.jpg" alt="Robot head illustration">
         <p>Roo-Tech</p>
@@ -23,8 +23,8 @@
       <ul>
           <li><a href="#" class="active">Home</a></li>
           <li><a href="#modal1">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="https://roo-tech.medium.com/" target="_blank">Blog</a></li>
           <li><a href="mailto:roo@roo-tech.com?subject=Reaching%20out%20to%20Roo&body=I%20would%20like%20to%20discuss:%0D%0Dor%20ask%20about:%0D%0DMy%20contact%20information%20is:%0D">Contact</a></li>
       </ul>
     </nav>
@@ -149,22 +149,24 @@
         </div>
       </section>
       <section class="interestz">
-        <h2>Interests</h2>
-        <p>As a curious individual and compulsive continuous learner I have wide range of interests which include:</p>
-        <ul>
-          <li><span>Robotics</span> - for me its the challenge of making the kits and then seeing how I can modify them or use parts for other projects</li>
-          <li><span>Item creation</span> - making items usually as gifts for others using my machines</li>
-          <li><span>Crafts</span> - Much to the detriment of my wife I have a whole host of crafts I am learning:
-            <ul>
-              <li>Sewing</li>
-              <li>Beading</li>
-              <li>Drawing & coloring</li>
-              <li>wanting to learn how to knit and crochet (of which I need to start)</li>
-            </ul>
-        </ul>
+        <div class="interestz-text">
+          <h2>Interests</h2>
+          <p>As a curious individual and compulsive continuous learner I have wide range of interests which include:</p>
+          <ul>
+            <li><span>Robotics</span> - for me its the challenge of making the kits and then seeing how I can modify them or use parts for other projects</li>
+            <li><span>Item creation</span> - making items usually as gifts for others using my machines</li>
+            <li><span>Crafts</span> - Much to the detriment of my wife I have a whole host of crafts I am learning:
+              <ul>
+                <li>Sewing</li>
+                <li>Beading</li>
+                <li>Drawing & coloring</li>
+                <li>wanting to learn how to knit and crochet (of which I need to start)</li>
+              </ul>
+          </ul>
+        </div>
       </section>
     </section>
-    <section class="wrapper projects">
+    <section  id="projects" class="wrapper projects">
       <h2>Projects</h2>
       <div class="webdev">
           <div class="webdev-text">
@@ -172,6 +174,7 @@
           <p>If These Lands Could Talk one page and multi-page website which was done as part of the IFA (Indigenous Friends Association) Web Development Internship. Here I assisted with code review, collaborative coding and feature enhancement via group work and GIT/GITHub for management. In phase one of the IFA program, HTML/CSS/Javascript (taught by IFA), UX Research and Design Foundations (taught by Jumping Elephant), and Digital Skills for Entrepreneurship (taught by Canada Learning Code).</p>
         </div>
         <div class="webdev-image">
+          <img src="./images/itlct.png" alt=" computer mockup showing a website">
         </div>
       </div>
       <div class="fullstack">
@@ -191,7 +194,13 @@
         </div>
       </div>
     </section>
+    <!-- <div class="scrolltop">
+      <div class="scroll icon"><a href="#top"><i class="fa fa-rocket" aria-hidden="true"></i></a></div>
+    </div> -->
+
+    <button class="btn scrolltop scroll icon"><a href="#top"><i class="fa fa-rocket" aria-hidden="true"></i></a></button>
 
 <script src="https://kit.fontawesome.com/c5c63ea8f5.js" crossorigin="anonymous"></script>
+<script src="./scripts/scripts.js"></script>
 </body>
 </html>
