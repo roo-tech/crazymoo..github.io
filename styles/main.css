@@ -557,7 +557,7 @@ text-align: center;
 /* END OF SCROLL CSS SECTION */
 
 /* START OF MEDIA QUERIES */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 922px) {
   .sticky-icon {
     display: none;
   }
