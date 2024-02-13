@@ -57,7 +57,7 @@ body {
 h1, h2, h3, h4, h5, h6, p {
   margin: 0px;
 }
-p, ul, li, h1, h2, h3, h4, h5, h6, .about-me p, .modal__content p {
+p, ul, li, h1, h2, h3, h4, h5, h6, .about-me #tagline, .about-me p, .modal__content p {
   /* font-size: clamp(0.5rem, 4vw, 1rem); */
   font-size: clamp(8px, calc(1vw + 8px), 16px);
   line-height: clamp(1.25rem, calc(1vw + 0.80rem), 2rem);
@@ -165,7 +165,7 @@ nav ul li a:hover, nav ul li a.active {
   margin: 5px 0 0 0;
 }
 .about-me #tagline {
-  font-size: 0.875rem;
+  /* font-size: 0.875rem; */
   font-style: italic;
   margin-bottom: 10px;
 }
