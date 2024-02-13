@@ -429,7 +429,7 @@ nav ul li a:hover, nav ul li a.active {
   justify-content: center;
   font-weight:400;
   background-color: var(--color-iron);
-  overflow: scroll;
+  /* overflow: scroll; */
   padding: 10px;
   line-height: 2em;
   border-radius: 10px;
