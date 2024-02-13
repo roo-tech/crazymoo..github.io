@@ -66,6 +66,9 @@ video, img {
   max-width: 100%;
   max-height: 300px;
 }
+.mobile-skillz {
+  display: none;
+}
 /* NAV BAR STYLING */
 nav {
   display: flex;
@@ -686,6 +689,34 @@ text-align: center;
     display: flex;
     flex-direction: column;
   } */
+.skillz {
+  display: none;
+}
+.mobile-skillz {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mobile-skillz ul {
+  list-style: none;
+  padding: 0 5px 0;
+}
+.mobile-skillz h2 {
+  margin: 5px;
+}
+.ms-box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  min-width: 120px;
+  /* max-width: 120px; */
+  border: 2px solid var(--color-night);
+  border-radius: 10px;
+  margin: clamp(2px, 1vw, 10px);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(137,134,152,1) 96%, rgba(63,62,71,0.01) 100%);
+}
+
   .webdev, .fullstack, .gaze, .sandbox {
     /* height: 300px; */
     display: flex;
