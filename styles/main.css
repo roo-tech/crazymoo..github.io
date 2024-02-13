@@ -31,6 +31,7 @@ html {
   --color-facebook: #316FF6;
   --color-instagram: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   --color-youtube: #FF0000;
+  --color-linkedin: #0077B5;
 
   /* Fonts */
   --main-font: 'Kreon', serif;
@@ -477,6 +478,12 @@ text-align: center;
 .sticky-icon a:hover i  {
 	transform:rotate(360deg);}
 /* LABEL STYLNG */
+.LinkedIn  {
+	background-color:var(--color-night);
+	color:var(--color-white);}
+.LinkedIn:hover {
+  background-color:var(--color-linkedin);
+}
 .Instagram  {
 	background-color:var(--color-night);
 	color:var(--color-white);}
@@ -494,7 +501,14 @@ text-align: center;
 	color:var(--color-white);}
 .Facebook:hover{
   background-color:var(--color-facebook);
-}	
+}
+.Github  {
+	background-color:var(--color-night);
+	color:var(--color-white);}
+.Github:hover {
+  background-color: var(--color-night);
+}
+
 .Youtube  {
 	background-color:var(--color-night);
 	color:var(--color-white);}
@@ -512,6 +526,9 @@ text-align: center;
 	border-radius:50%;
 	margin-right:20px;
 	transition:all 0.5s;}
+.sticky-icon a i.fa-linkedin  {
+  background-color:var(--color-white);
+  color:var(--color-night);}  
 .sticky-icon a i.fa-instagram  {
   background-color:var(--color-white);
   color:var(--color-night);}
@@ -521,10 +538,16 @@ text-align: center;
 .sticky-icon a i.fa-facebook-f  {
   background-color:var(--color-white);
   color:var(--color-night);}
+.sticky-icon a i.fa-square-github  {
+  background-color:var(--color-white);
+  color:var(--color-night);}
 .sticky-icon a i.fa-youtube  {
   background-color:var(--color-white);
   color:var(--color-night);}        
 /* HOVER STATES OF ICONS */
+.sticky-icon:hover a i.fa-linkedin  {
+  background-color: var(--color-white);
+  color: var(--color-linkedin);}
 .sticky-icon:hover a i.fa-instagram  {
   background-color: var(--color-white);
   color: var(--color-youtube);}
@@ -534,6 +557,9 @@ text-align: center;
 .sticky-icon:hover a i.fa-facebook-f  {
   background-color:var(--color-white);
   color: var(--color-facebook);}
+.sticky-icon:hover a i.fa-square-github  {
+  background-color: var(--color-white);
+  color: var(--color-night);}
 .sticky-icon:hover a i.fa-youtube  {
   background-color:var(--color-white);
   color: var(--color-youtube);}
